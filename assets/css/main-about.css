@@ -1,0 +1,254 @@
+:root {
+    --primaryblack: rgba(0, 0, 0, .5);
+    --primarymain: rgb(140, 47, 122);
+}
+
+/* ---------------------------------------------- team ----------------------------------------------------------- */
+
+.team {
+    margin-top: 10rem;
+}
+
+.team div div p:nth-child(1) {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.team div div p:nth-child(2) {
+    font-weight: 200;
+} 
+
+.team div div button {
+    padding: .5rem 1rem;
+    font-weight: 500;
+    outline: none;
+    color: rgba(0, 0, 0, .6);
+    border: 2px solid rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    background: transparent;
+}
+
+.team div div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.team div:nth-child(2) {
+    position: relative;
+}
+
+.team div:nth-child(2) div:nth-child(2) {
+    width: 350px;
+    position: absolute;
+    top: 120px;
+    left: 450px;
+}
+
+/* -------------------------------------------------- */
+
+@media (max-width: 1200px) {
+
+    .team > div:nth-child(1) > div:nth-child(1) {
+        margin-top: 5rem;
+    }
+
+    .team div:nth-child(2) div:nth-child(2) {
+        width: 460px;
+        top: 400px;
+        left: 260px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .team div:nth-child(2) div:nth-child(2) img {
+        display: none;
+    }
+    
+    .team > div:nth-child(1) > div:nth-child(1) {
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .team div div p:nth-child(1) {
+        font-size: 1.3rem;
+    }
+    
+    .team div div p:nth-child(2) {
+        font-size: .9rem;
+    } 
+
+    .team div div button {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .team div div p:nth-child(1) {
+        font-size: 1rem;
+    }
+    
+    .team div div p:nth-child(2) {
+        font-size: .8rem;
+    } 
+
+    
+    .team div div button {
+        font-size: .8rem;
+    }
+}
+
+/* ---------------------------------------------- team members ----------------------------------------------------------- */
+
+.team-members {
+    margin-top: 10rem;
+}
+
+/* header */
+
+.team-members header p:nth-child(1) {
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.team-members header .line-2 {
+    width: 90px;
+    height: 4px;
+    background-color: var(--primarymain);
+    margin: .5rem 0 1.5rem 0;
+}
+
+.team-members header p:nth-child(3) {
+    font-weight: 500;
+    
+}
+
+/* main */
+
+.card-profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2c3a47;
+    padding: 40px;
+    border-radius: 10px ;
+}
+
+.picture {
+    width: 120px;
+    height: 120px;
+    padding: 8px;
+    background: linear-gradient(130deg, #47b9ff, #e66767);
+    border-radius: 50%;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.content-name {
+    color: #fff;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.content-job {
+    color: #e66767;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.link {
+    margin: 1rem 0 2rem 0;
+}
+
+.link a {
+    margin: 0 .8rem;
+    color: #fff;
+}
+
+.contact-btn {
+    color: #e66767;
+    padding: 7px 40px;
+    border: 2px solid #e66767;
+    outline: none;
+    border-radius: 6px;
+    transition: .2s linear;
+}
+
+.contact-btn:hover {
+    color: #f2f2f2;
+    background: #e66767;
+}
+
+
+/* ---------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    /* header */
+
+    .team-members header p:nth-child(1) {
+        font-size: 1.1rem;
+    }
+    
+    .team-members header p:nth-child(3) {
+        font-size: .9rem;
+    }
+
+    /* main */
+
+    .link a {
+        margin: 0 .5rem;
+    }
+
+    .contact-btn:hover {
+        background: transparent;
+        color: #e66767;
+    }
+    
+    .content-name {
+        font-size: 1.1rem;
+    }
+    
+    .content-job,
+    .contact-btn {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* header */
+
+    .team-members header p:nth-child(1) {
+        font-size: 1rem;
+    }
+    
+    .team-members header p:nth-child(3) {
+        font-size: .8rem;
+        font-weight: 400;
+    }
+
+    /* main */
+
+    .content-name {
+        font-size: 1rem;
+    }
+    
+    .content-job,
+    .contact-btn {
+        font-size: .8rem;
+    } 
+}

@@ -1,0 +1,184 @@
+:root {
+    --primarymain: rgb(140, 47, 122);
+    --primaryblack: #000000;
+    --white: #fff;
+    --primary: rgba(0, 0, 0, .5);
+}
+
+/* ---------------------------------------------- contact ----------------------------------------------------------- */
+
+.contact {
+    margin-top: 7rem;
+}
+
+.contact > div:nth-child(1) > p:nth-child(1) {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.contact .line-1 {
+    width: 70px;
+    height: 4px;
+    background-color: var(--primarymain);
+    margin: .5rem 0 1rem 0;
+}
+
+.contact > div:nth-child(1) > p:nth-child(3) {
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.contact > div:nth-child(1) > div:nth-child(4) > div > p:nth-child(1) {
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.contact > div:nth-child(1) > div:nth-child(4) > div > p:nth-child(2) {
+    font-weight: 200;
+}
+
+.contact > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(3) {
+    font-weight: 500;
+    display: block;
+    color: var(--primarymain);
+    transition: all .5s;
+}
+
+.contact > div:nth-child(1) > div:nth-child(4) > div:nth-child(3) > a:nth-child(2),
+.contact > div:nth-child(1) > div:nth-child(4) > div:nth-child(4) > a:nth-child(2) {
+    color: rgba(0, 0, 0, .8);
+    font-family: 'vazir',Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.contact > div:nth-child(1) > div:nth-child(4) > div:nth-child(3) > a:nth-child(3),
+.contact > div:nth-child(1) > div:nth-child(4) > div:nth-child(4) > a:nth-child(3) {
+    margin-top: .7rem;
+}
+
+/* form */
+
+.contact form {
+    margin-top: 5rem;
+}
+
+
+.contact form div input {
+    outline: none;
+}
+
+.contact form div:nth-child(1) input,
+.contact form div:nth-child(2) input {
+    width: 100%;
+    border: .1px solid rgba(5, 4, 4, 0.2);
+    font-weight: 500;
+}
+
+.contact form div:nth-child(1) input:nth-child(1),
+.contact form div:nth-child(2) input:nth-child(1)  {
+    margin-left: 2rem;
+}
+
+.contact form div:nth-child(2) {
+    margin-top: 2rem;
+}
+
+.contact form div:nth-child(1) input,
+.contact form div:nth-child(2) input {
+    padding: .5rem 1rem;
+    color: var(--primary);
+}
+
+.contact form div:nth-child(3) textarea {
+    width: 100%;
+    outline: none;
+    margin-top: 2rem;
+    font-weight: 500;
+    border: .1px solid rgba(5, 4, 4, 0.2);
+}
+
+.contact form div button {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #333;
+    font-weight: 400;
+    color: var(--white);
+    border: none;
+    outline: none;
+    padding: .8rem 1rem;
+    transition: all .5s;
+}
+
+.contact form div button:hover {
+    background-color: var(--primarymain);
+}
+
+/* ------------------------------------------------ */
+
+@media (max-width: 992px) {
+
+    .contact > div:nth-child(1) div:nth-child(4) > div:nth-child(2) {
+        margin-top: 1rem;
+    }
+    
+    /* form */
+
+    .contact form div:nth-child(1) input:nth-child(2),
+    .contact form div:nth-child(2) input:nth-child(2) {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width:  768px) {
+
+    .contact > div:nth-child(1) > p:nth-child(1) {
+        font-size: 1.3rem;
+    }
+
+    .contact > div:nth-child(1) > div:nth-child(4) > div > p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .contact > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(3),
+    .contact > div:nth-child(1) > div:nth-child(4) > div > p:nth-child(2),
+    .contact > div:nth-child(1) > div:nth-child(4) > div:nth-child(3) > a:nth-child(2),
+    .contact > div:nth-child(1) > div:nth-child(4) > div:nth-child(4) > a:nth-child(2),
+    .contact > div:nth-child(1) > div:nth-child(4) > div:nth-child(3) > a:nth-child(3),
+    .contact > div:nth-child(1) > div:nth-child(4) > div:nth-child(4) > a:nth-child(3),
+    .contact > div:nth-child(1) > p:nth-child(3) {
+        font-size: .9rem;
+    }
+
+    .contact form div input ,
+    .contact form div:nth-child(3) textarea,
+    .contact form div button {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width:  576px) {
+    .contact > div:nth-child(1) > p:nth-child(1) {
+        font-size: 1.1rem;
+    }
+
+
+    .contact > div:nth-child(1) > div:nth-child(4) > div > p:nth-child(1) {
+        font-size: .9rem;
+    }
+    
+    .contact > div:nth-child(1) > div:nth-child(4) > div > a:nth-child(3),
+    .contact > div:nth-child(1) > div:nth-child(4) > div > p:nth-child(2),
+    .contact > div:nth-child(1) > div:nth-child(4) > div:nth-child(3) > a:nth-child(2),
+    .contact > div:nth-child(1) > div:nth-child(4) > div:nth-child(4) > a:nth-child(2),
+    .contact > div:nth-child(1) > div:nth-child(4) > div:nth-child(3) > a:nth-child(3),
+    .contact > div:nth-child(1) > div:nth-child(4) > div:nth-child(4) > a:nth-child(3),
+    .contact > div:nth-child(1) > p:nth-child(3) {
+        font-size: .9rem;
+    }
+
+    .contact form div input,
+    .contact form div:nth-child(3) textarea,
+    .contact form div button {
+        font-size: .7rem;
+    }   
+}

@@ -1,0 +1,837 @@
+:root {
+    --primarywhite: #fff;
+    --wh: rgba(255, 255, 255, .8);
+    --primarymain: rgb(140, 47, 122);
+    --light: rgba(0, 0, 0, .3);
+    --primary: rgba(0, 0, 0, .7);
+    --primarygray: #333;
+    --primaryblack: rgba(0, 0, 0, .5);
+}
+
+/* ---------------------------------------------- header content ----------------------------------------------------------- */
+
+/* hedaer */
+
+.header-content {
+    margin-top: 6rem;
+}
+
+.header-content header p:nth-child(1) {
+    font-family: vazir;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.header-content header .line-3 {
+    width: 90px;
+    height: 4px;
+    background-color: var(--primarymain);
+    margin: .5rem 0 1rem;
+}
+
+.header-content header p:nth-child(3) {
+    font-family: vazir;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+/* main */
+
+.header-content main div p:nth-child(1) {
+    font-size: 2.5rem;
+    font-family: vazir;
+    font-weight: 700;
+    color: var(--light);
+}
+
+.header-content main div p:nth-child(2) {
+    font-family: vazir;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: -1.3rem;
+} 
+
+.header-content main div p:nth-child(3) {
+    font-family: vazir;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .7);
+    font-size: 1.1rem;   
+}
+
+.header-content main div .line-4 {
+    width: 30px;
+    height: 2px;
+    background-color: var(--primarymain);
+} 
+
+/* ------------------------------------------- */
+
+@media (max-width: 992px) {
+
+    .header-content main div:nth-child(2),
+    .header-content main div:nth-child(3) {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content header p:nth-child(1) {
+        font-size: 1.2rem;
+    }
+
+    .header-content header p:nth-child(3) {
+        font-size: 1rem;
+    }
+
+    .header-content main div p:nth-child(1) {
+        font-size: 2rem;
+    }
+
+    .header-content main div p:nth-child(2) {
+        font-size: 1rem;
+    } 
+    
+    .header-content main div p:nth-child(3) {
+        font-size: .9rem;   
+    }
+}
+
+@media (max-width: 576px) {
+    .header-content header p:nth-child(1) {
+        font-size: 1rem;
+    }
+    
+    .header-content header p:nth-child(3) {
+        font-size: .8rem;
+    }
+
+    .header-content main div p:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .header-content main div p:nth-child(2) {
+        font-size: .9rem;
+    } 
+    
+    .header-content main div p:nth-child(3) {
+        font-size: .8rem;   
+    }
+}
+
+/* ---------------------------------------------- main content ----------------------------------------------------------- */
+
+.main-content {
+    margin-top: 8rem;
+}
+
+/* header */
+
+.main-content header p:nth-child(1) {
+    font-family: vazir;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.main-content header .line-5 {
+    width: 90px;
+    height: 4px;
+    background-color: var(--primarymain);
+    margin: .5rem 0 1.3rem 0;
+}
+
+.main-content header p:nth-child(3) {
+    font-family: vazir;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+/* main */
+
+.main-content main div div .circle-1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px 0px rgb(40 40 40 / 10%);
+    border: 4px solid #dedede;
+    font-size: 3rem;
+    color: var(--primarymain);
+    font-family: bold-woff;
+    transition: all .5s;
+    cursor: text;
+}
+
+.main-content main div div .circle-1:hover {
+    background-color: var(--primarymain);
+    color: #fff;
+}
+
+.main-content main div div .circle-1::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -14.5px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px 0px rgb(40 40 40 / 20%);
+}
+
+.main-content main div div div:nth-child(2) p:nth-child(1) {
+    font-family: vazir;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.main-content main div div:nth-child(2) p:nth-child(2) {
+    font-family: vazir;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .9);
+} 
+
+/* ------------------------------------------------------ */
+
+@media (max-width: 768px) {
+    .main-content main div div .circle-1:hover {
+        background-color: inherit;
+        color: rgb(140, 47, 122);
+    }
+
+    .main-content header p:nth-child(1) {
+        font-size: 1.4rem;
+    }
+
+    .main-content header p:nth-child(3) {
+        font-size: .9rem;
+    }
+
+    .main-content main div div div:nth-child(2) p:nth-child(1) {
+        font-size: 1.1rem;
+    }
+    
+    .main-content main div div:nth-child(2) p:nth-child(2) {
+        font-size: .9rem;
+    } 
+}
+
+@media (max-width: 576px) {
+    .main-content header p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .main-content header p:nth-child(3) {
+        font-size: .8rem;
+    }
+
+    .main-content main div div div:nth-child(2) p:nth-child(1) {
+        font-size: 1rem;
+    }
+    
+    .main-content main div div:nth-child(2) p:nth-child(2) {
+        font-size: .8rem;
+    }
+}
+
+/* ---------------------------------------------- brand ----------------------------------------------------------- */
+
+.brand {
+    margin-top: 5rem;
+}
+
+/* header */
+
+.brand header p:nth-child(1) {
+    font-family: vazir;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.brand header .line-6 {
+    width: 90px;
+    height: 4px;
+    background-color: var(--primarymain);
+    margin: .5rem 0 1.3rem 0;
+}
+
+.brand header p:nth-child(3) {
+    font-family: vazir;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+/* main */
+
+.brand main div figure img {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 1rem;
+}
+
+.brand main div figcaption p:nth-child(1) {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.brand main div figcaption p:nth-child(2) {
+    font-family: 'vazir', Arial, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .9);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .brand header p:nth-child(1) {
+        font-size: 1.1rem;
+    }
+
+    .brand header p:nth-child(3) {
+        font-size: .9rem;
+    }
+
+    .brand main div figcaption p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .brand main div figcaption p:nth-child(2) {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand header p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .brand header p:nth-child(3) {
+        font-size: .8rem;
+    }
+
+    .brand main div figcaption p:nth-child(1) {
+        font-size: .9rem;
+    }
+
+    .brand main div figcaption p:nth-child(2) {
+        font-size: .8rem;
+    }
+}
+
+/* ---------------------------------------------- content img ----------------------------------------------------------- */
+
+.content-img {
+    margin-top: 6rem;
+}
+
+.content-img figure > div:nth-child(1) {
+    width: 100%;
+    height: 550px;
+}
+
+.content-img figure > div:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    filter: blur(10px);
+}
+
+.content-img figure figcaption > div:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(0);
+}
+
+.content-img figure figcaption > div:nth-child(2) p:nth-child(1) {
+    color: rgba(255, 255, 255, .9);
+    font-family: vazir;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.content-img figure figcaption > div:nth-child(2) p:nth-child(2) {
+    font-family: vazir;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, .6);
+}
+
+/* --------------------------------------------------------- */
+
+@media (max-width: 992px) {
+    
+
+    .content-img figure figcaption  {
+        margin-top: 2rem;
+    }
+
+    .content-img figure figcaption > div:nth-child(1) {
+        width: 250px;
+        height: 200px;
+    }
+
+    .content-img figure figcaption > div:nth-child(2) {
+        margin-top: 1rem;
+    }
+
+    .content-img figure figcaption > div:nth-child(2) p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .content-img figure figcaption > div:nth-child(2) p:nth-child(2) {
+        font-size: 1rem;
+    }
+} 
+
+@media (max-width: 768px) {
+    .content-img figure figcaption > div:nth-child(2) p:nth-child(1) {
+        font-size: 1.1rem;
+    }
+
+    .content-img figure figcaption > div:nth-child(2) p:nth-child(2) {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-img figure figcaption > div:nth-child(2) p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .content-img figure figcaption > div:nth-child(2) p:nth-child(2) {
+        font-size: .9rem;
+    }
+}
+
+/* ---------------------------------------------- top products ----------------------------------------------------------- */
+
+.top-products {
+    margin-top: 10rem;
+}
+
+/* header */
+
+.top-products header p:nth-child(1) {
+    font-family: vazir;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.top-products header .line-7 {
+    width: 90px;
+    height: 4px;
+    background-color: var(--primarymain);
+    margin: .5rem 0 1.3rem 0;
+}
+
+.top-products header p:nth-child(3) {
+    font-family: vazir;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+/* main */ 
+
+.card-product {
+    background-color: rgb(250, 237, 229);
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-product-img {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top left, rgb(203, 134, 127), rgb(201, 143, 105));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-product-img img {
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-product-content {
+    padding: 50px;
+}
+
+.card-product-content > p:nth-child(1) {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.card-product-header {
+    border-bottom: 2px solid rgba(0, 0, 0, .04);
+    padding-bottom: 1rem;
+}
+
+.card-product-header p {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+
+.card-product-header p span {
+    margin-top: 1rem;
+    color: rgb(212, 132, 79);
+    font-size: 1.3rem;
+}
+
+.card-product-header div {
+    width: 80px;
+    height: 80px;
+}
+
+.card-product-header div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-product-main {
+    margin-top: 1.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .04);
+    padding-bottom: 1rem;
+}
+
+.card-product-main > p:nth-child(1) {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 2.3rem;
+}
+
+.card-product-main-paragraph {
+    font-size: 1rem;
+    margin-top: -.5rem;
+}
+
+.card-product-price {
+    margin: 1.5rem 0 0 6rem;
+}
+
+.card-product-price p:first-child {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.card-product-price p:last-child {
+    color: rgb(212, 132, 79);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.card-product-pay {
+    margin-top: 1.5rem;
+}
+
+.card-product-pay p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-product-pay input:nth-child(2) {
+    margin-top: 1rem;
+}
+
+.card-product-pay .card-product-pay-paypal div,
+.card-product-pay .card-product-pay-visa div {
+    width: 50px;
+    height: 50px;
+    margin: -1.2rem .6rem 0 0;
+}
+
+.card-product-pay .card-product-pay-paypal div img,
+.card-product-pay .card-product-pay-visa div img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.card-product-pay .card-product-pay-visa {
+    margin-right: 4rem;
+}
+
+.card-product-img-2 {
+    background: #429421;
+}
+
+.card-product-content-2 {
+    background-color: #4294213c;
+}
+
+.card-product-header-2 p span {
+    color: #009900;
+}
+
+.card-product-price-2 p:nth-child(2) {
+    color: #009900;
+}
+
+.card-product-img-3 {
+    background: #003cc5;
+}
+
+.card-product-content-3 {
+    background-color: #003bc548;
+}
+
+.card-product-header-3 p span {
+    color: #000066;
+}
+
+.card-product-price-3 p:nth-child(2) {
+    color: #000066;
+}
+
+/* --------------------------------------------------- */
+
+@media (max-width: 1200px) {    
+    .card-product-img {
+        display: none;
+    }
+
+    .card-product-img img {
+        display: none;
+    }
+
+    .card-product-header div {
+        width: 50%;
+        height: 50%;
+    }
+    
+    .card-product-header div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }    
+}
+
+@media (max-width: 768px) {
+
+    /* header */
+
+    .top-products header p:nth-child(1) {
+        font-size: 1.2rem;
+    }
+    
+    .top-products header p:nth-child(3) {
+        font-size: .9rem;
+    }
+
+    /* main */
+
+    .card-product-price {
+        margin: 1.5rem 0 0 5rem;
+    }
+
+    .card-product-content > p:nth-child(1) {
+        font-size: 1.3rem;
+    }
+
+    .card-product-header p span {
+        font-size: 1.1rem;
+    }
+
+    .card-product-header p {
+        font-size: 1rem;
+    }
+
+    .card-product-main > p:nth-child(1) {
+        font-size: 1.1rem;
+    }
+
+    .card-product-main-paragraph {
+        font-size: .9rem;
+    }
+
+    .card-product-price p:first-child {
+        font-size: 1.1rem;
+    }
+
+    .card-product-price p:last-child {
+        font-size: 1.2rem;
+    }
+
+    .card-product-pay p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* header */
+
+    .top-products header p:nth-child(1) {
+        font-size: 1rem;
+    }
+    
+    .top-products header p:nth-child(3) {
+        font-size: .8rem;
+    }
+
+    /* main */
+
+    .card-product-main div div:nth-child(2) {
+        display: none;
+    }
+
+    .card-product-pay .card-product-pay-visa {
+        margin: 1rem 0 0 0;
+    }
+
+    .card-product-header div {
+        width: 150px;
+    }
+
+    .card-product-content > p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .card-product-header p span {
+        font-size: 1rem;
+    }
+
+    .card-product-header p {
+        font-size: .9rem;
+    }
+
+    .card-product-main > p:nth-child(1) {
+        font-size: 1rem;
+    }
+    
+    .card-product-main-paragraph {
+        font-size: .8rem;
+    }
+
+    .card-product-price p:first-child {
+        font-size: 1rem;
+    }
+
+    .card-product-price p:last-child {
+        font-size: 1.1rem;
+    }
+
+    .card-product-pay p {
+        font-size: 1rem;
+    }
+}
+
+/* ---------------------------------------------- footer content ----------------------------------------------------------- */
+
+.footer-content {
+    margin-top: 10rem;
+}
+
+/* header */
+
+.footer-content header p:nth-child(1) {
+    font-family: vazir;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.footer-content header .line-10 {
+    width: 90px;
+    height: 2px;
+    background: var(--primarymain);
+    margin: .5rem 0 1.3rem 0;
+}
+
+.footer-content header p:nth-child(3) {
+    font-family: vazir;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+/* main */
+
+.footer-content main figure > div:nth-child(1) {
+    height: 200px;
+}
+
+.footer-content main figure > div:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footer-content main figure figcaption p:nth-child(1) {
+    font-family: vazir;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.footer-content main figure figcaption p:nth-child(2) {
+    font-family: vazir;
+    font-weight: 400;
+    color: var(--primary);
+}  
+
+/* -------------------------------------------------------- */
+
+@media (max-width: 992px) {
+
+    .footer-content main figure > div:nth-child(1) {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* header */
+
+    .footer-content header p:nth-child(1) {
+        font-size: 1.1rem;
+    }
+
+    .footer-content header p:nth-child(3) {
+        font-size: .9rem;
+    }
+
+    /* main */
+
+    .footer-content main figure figcaption p:nth-child(1) {
+        font-size: 1rem;
+    }
+    
+    .footer-content main figure figcaption p:nth-child(2) {
+        font-size: .9rem;
+    } 
+}
+
+@media (max-width: 576px) {
+
+    /* header */
+
+    .footer-content header p:nth-child(1) {
+        font-size: 1.1rem;
+    }
+
+    .footer-content header p:nth-child(3) {
+        font-size: .8rem;
+    }
+
+    /* main */
+
+    .footer-content main figure figcaption p:nth-child(1) {
+        font-size: 1rem;
+    }
+    
+    .footer-content main figure figcaption p:nth-child(2) {
+        font-size: .8rem;
+    } 
+}

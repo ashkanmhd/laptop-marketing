@@ -1,0 +1,269 @@
+:root {
+    --primarymain: rgb(140, 47, 122);
+    --primary: rgba(0, 0, 0, .7);
+}
+
+/* ---------------------------------------------- brand ----------------------------------------------------------- */
+
+.brand {
+    margin-top: 5rem;
+}
+
+/* header */
+
+.brand header p:nth-child(1) {
+    font-family: vazir;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.brand header .line-6 {
+    width: 90px;
+    height: 4px;
+    background-color: var(--primarymain);
+    margin: .5rem 0 1.3rem 0;
+}
+
+.brand header p:nth-child(3) {
+    font-family: vazir;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+/* main */
+
+.brand main div figure img {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 1rem;
+}
+
+.brand main div figcaption p:nth-child(1) {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.brand main div figcaption p:nth-child(2) {
+    font-family: 'vazir', Arial, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .9);
+}
+
+/* ---------------------------------------------- product----------------------------------------------------------- */
+
+.product header {
+    margin-top: 10rem;
+}
+
+/* header */
+
+.product header p:nth-child(1) {
+    font-family: vazir;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.product header .line-2 {
+    width: 100px;
+    height: 4px;
+    background-color: var(--primarymain);
+    margin: .5rem 0 1.3rem 0;
+}
+
+.product header p:nth-child(3) {
+    font-family: vazir;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .6);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+/* main */
+
+.content {
+    position: relative;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 300px;
+    height: 230px;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-detail {
+    height: 250px;
+    background: #21222d;
+    border-radius: 40% 0 0 0;
+    padding: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.rating {
+    font-size: .7rem;
+    color: #fdcc0d;
+    margin: .4rem 0;
+}
+
+.specifications p {
+    font-family: 'vazir',Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: .8rem 0;
+}
+
+.product-detail p {
+    font-size: .8rem;
+    color: #5f5f6b;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-family: vazir;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.btn {
+    position: relative;
+    border: none;
+    outline: none;
+    background: #35353f;
+    color: #fff;
+    height: 40px;
+    border-radius: 50px;
+    font-size: .9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #35353f;
+    height: 45px;
+    transition: .3s;
+}
+
+.btn:hover::before {
+    border-color: #fff;
+}
+
+.cart {
+    width: 160px;
+    font-family: vazir;
+    font-weight: 700;
+}
+
+.cart::before {
+    width: 165px;
+    border-radius: 50px;
+}
+
+/* -------------------------------------- */
+
+@media (max-width: 1200px) {
+    .btn:hover::before {
+        border-color: #35353f;
+    }
+    
+    .cart {
+        width: 120px;
+    }
+    
+    .cart::before {
+        width: 125px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* header */
+
+    .product header p:nth-child(1) {
+        font-size: 1.3rem;
+    }
+
+    .product header p:nth-child(3) {
+        font-size: 1rem;
+    }
+
+    /* main */
+
+    .product-img {
+        width: 150px;
+        height: 120px;
+    }
+
+    .product-detail span {
+        font-size: .9rem;
+    }
+
+    .product-detail p {
+        font-size: .8rem;
+    } 
+
+    .cart {
+        width: 90px;
+    }
+    
+    .cart::before {
+        width: 95px;
+    }
+}
+
+
+@media(max-width: 576px) {
+    /* header */
+
+    .product header p:nth-child(1) {
+        font-size: 1rem;
+    }
+    
+    .product header p:nth-child(3) {
+        font-size: .9rem;
+    }
+
+    /* main */
+
+    .cart {
+        width: 120px;
+    }
+    
+    .cart::before {
+        width: 125px;
+    }
+
+    .product-img {
+        width: 200px;
+        height: 160px;
+    }
+
+    .cart {
+        width: 90px;
+    }
+    
+    .cart::before {
+        width: 95px;
+    }
+}
